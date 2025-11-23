@@ -1,14 +1,11 @@
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { Text, View } from 'react-native';
 
+import { Image, Text, View } from 'react-native';
+import { images } from "@/constants/images";
 
 export default function Index() {
   return (
-    <View className="flex-1 justify-center items-center" >
-      <Text className= " text-5xl ">
-          Welcome!
-      </Text>
-
+    <View className="flex-1 bg-primary" >
+        <Image source={images.bg} className='absolute w-full z-0'/>
     </View>
   );
 }
